@@ -1,7 +1,6 @@
 {
   "family": "backend-task-test",
-  "executionRoleArn": "arn:aws:iam::381492178973
-:role/backend-ecs-execution-role-eu-central-1",
+  "executionRoleArn": "arn:aws:iam::381492178973:role/backend-ecs-execution-role-eu-central-1",
   "containerDefinitions": [
     {
       "logConfiguration": {
@@ -48,8 +47,7 @@
       "cpu": 1024,
       "memory": 2048,
       "memoryReservation": 1024,
-      "image": "381492178973
-.dkr.ecr.eu-central-1.amazonaws.com/backend:latest",
+      "image": "381492178973.dkr.ecr.eu-central-1.amazonaws.com/backend:latest",
       "dockerLabels": {
         "PROMETHEUS_EXPORTER_PORT": "8081",
         "PROMETHEUS_EXPORTER_PATH": "/backend/status/v1/prometheus",
@@ -59,8 +57,7 @@
       "name": "backend"
     }
   ],
-  "taskRoleArn": "arn:aws:iam::381492178973
-:role/backend-ecs-task-role-eu-central-1",
+  "taskRoleArn": "arn:aws:iam::381492178973:role/backend-ecs-task-role-eu-central-1",
   "requiresCompatibilities": [
     "FARGATE"
   ],
